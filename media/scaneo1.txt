@@ -1,0 +1,81 @@
+nsenum VERSION:1.2.6
+
+-----   mercacentro.com   -----
+
+
+Host's addresses:
+__________________
+
+mercacentro.com.                         1800     IN    A        15.204.129.131
+mercacentro.com.                         1800     IN    A        192.171.19.206
+
+
+Name Servers:
+______________
+
+ns2.siteground.net.                      6645     IN    A        99.83.229.113
+ns1.siteground.net.                      1606     IN    A        75.2.77.104
+
+
+Mail (MX) Servers:
+___________________
+
+mx10.antispam.mailspamprotection.com.    240      IN    A        34.149.79.66
+mx20.antispam.mailspamprotection.com.    284      IN    A        34.120.156.61
+mx30.antispam.mailspamprotection.com.    244      IN    A        34.111.121.216
+
+
+Trying Zone Transfers and getting Bind Versions:
+_________________________________________________
+
+
+Trying Zone Transfer for mercacentro.com on ns2.siteground.net ... 
+AXFR record query failed: REFUSED
+
+Trying Zone Transfer for mercacentro.com on ns1.siteground.net ... 
+AXFR record query failed: REFUSED
+
+
+Brute forcing with /usr/share/dnsenum/dns.txt:
+_______________________________________________
+
+ftp.mercacentro.com.                     21600    IN    A        35.212.28.144
+mail.mercacentro.com.                    21600    IN    A        35.212.28.144
+ssh.mercacentro.com.                     21600    IN    A        35.212.28.144
+www.mercacentro.com.                     1070     IN    CNAME    loadbalancer1.totalcommerce.cloud.
+loadbalancer1.totalcommerce.cloud.       300      IN    A        104.22.19.84
+loadbalancer1.totalcommerce.cloud.       300      IN    A        104.22.18.84
+loadbalancer1.totalcommerce.cloud.       300      IN    A        172.67.8.2
+
+
+mercacentro.com class C netranges:
+___________________________________
+
+ 15.204.129.0/24
+ 35.212.28.0/24
+ 192.171.19.0/24
+
+
+Performing reverse lookup on 768 ip addresses:
+_______________________________________________
+
+
+0 results out of 768 IP addresses.
+
+
+mercacentro.com ip blocks:
+___________________________
+
+
+done.
+
+
+;; ANSWER SECTION:
+mercacentro.com.	1800	IN	A	192.171.19.206
+mercacentro.com.	21600	IN	NS	ns1.siteground.net.
+mercacentro.com.	21600	IN	NS	ns2.siteground.net.
+mercacentro.com.	21600	IN	MX	10 mx10.antispam.mailspamprotection.com.
+mercacentro.com.	21600	IN	MX	20 mx20.antispam.mailspamprotection.com.
+mercacentro.com.	21600	IN	MX	30 mx30.antispam.mailspamprotection.com.
+mercacentro.com.	1800	IN	A	15.204.129.131
+
